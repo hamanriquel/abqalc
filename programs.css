@@ -1,0 +1,118 @@
+/* ===============================
+   PROGRAMS SECTION
+================================ */
+
+.programs-section {
+  padding: 90px 20px;
+  background: #ffffff;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* Title */
+.section-title {
+  text-align: center;
+  font-size: 32px;
+  color: #a42018;
+  margin-bottom: 60px;
+}
+
+/* Grid */
+.programs-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+/* Card */
+.program-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+  transition: transform 0.3s ease;
+}
+
+.program-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Image */
+.program-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  border-radius: 16px 16px 0 0;
+}
+
+/* Info */
+.program-info {
+  padding: 25px;
+}
+
+.program-info h3 {
+  color: #177E89;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.program-info p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Button */
+.toggle-btn {
+  margin-top: 15px;
+  background: #fdbd4a;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.toggle-btn:hover {
+  background: #e6a832;
+}
+
+/* ===============================
+   EXPANDABLE DETAILS (KEY)
+================================ */
+
+.program-details {
+  margin-top: 15px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+.program-details.active {
+  overflow: visible;
+}
+
+
+/* ===============================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 1000px) {
+  .programs-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 650px) {
+  .programs-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-title {
+    font-size: 26px;
+  }
+}
