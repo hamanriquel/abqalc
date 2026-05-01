@@ -1159,3 +1159,547 @@ nav a {
     text-align: center;
   }
 }
+
+
+/* ARROWS */
+.stories-container {
+  position: relative;
+}
+
+.story-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(23, 126, 137, 0.9);
+  color: white;
+  border: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  font-size: 22px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease, transform 0.3s ease;
+  z-index: 10;
+}
+
+.story-arrow:hover {
+  background: #fdbd4a;
+  color: #000;
+  transform: translateY(-50%) scale(1.1);
+}
+
+.story-arrow.left {
+  left: -20px;
+}
+
+.story-arrow.right {
+  right: -20px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .story-arrow.left {
+    left: 5px;
+  }
+
+  .story-arrow.right {
+    right: 5px;
+  }
+}
+
+
+
+/* ================= WHO WE ARE ================= */
+.who-section {
+  padding: 90px 20px;
+  background: #ffffff;
+}
+
+.who-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.who-title {
+  text-align: center;
+  font-size: 34px;
+  color: #a42018;
+  margin-bottom: 60px;
+}
+
+/* GRID */
+.who-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+/* CARD */
+.who-card {
+  position: relative;
+  height: 320px;
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.who-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+/* OVERLAY */
+.who-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(14, 42, 45, 0.9),
+    rgba(14, 42, 45, 0.2)
+  );
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 25px;
+  transform: translateY(60%);
+  transition: transform 0.6s ease;
+}
+
+.who-overlay h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #fdbd4a;
+}
+
+.who-overlay p {
+  font-size: 14px;
+  line-height: 1.6;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+/* HOVER EFFECT */
+.who-card:hover img {
+  transform: scale(1.1);
+}
+
+.who-card:hover .who-overlay {
+  transform: translateY(0);
+}
+
+.who-card:hover .who-overlay p {
+  opacity: 1;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1000px) {
+  .who-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .who-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+/* ================= OUR MODEL ================= */
+.model-section {
+  padding: 100px 20px;
+  background: #f8f8f8;
+}
+
+.model-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.model-title {
+  text-align: center;
+  font-size: 34px;
+  color: #a42018;
+  margin-bottom: 60px;
+}
+
+/* CARD */
+.model-card {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.2);
+}
+
+/* IMAGE */
+.model-image img {
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.8s ease;
+}
+
+/* OVERLAY */
+.model-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(14, 42, 45, 0.95),
+    rgba(14, 42, 45, 0.4)
+  );
+  color: white;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  transform: translateY(55%);
+  transition: transform 0.7s ease;
+}
+
+.model-overlay h3 {
+  font-size: 22px;
+  color: #fdbd4a;
+  margin-bottom: 15px;
+}
+
+.model-overlay p {
+  font-size: 16px;
+  line-height: 1.7;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+/* HOVER EFFECT */
+.model-card:hover .model-image img {
+  transform: scale(1.08);
+}
+
+.model-card:hover .model-overlay {
+  transform: translateY(0);
+}
+
+.model-card:hover .model-overlay p {
+  opacity: 1;
+}
+/* MOBILE */
+@media (max-width: 768px) {
+  .model-image img {
+    height: 380px;
+  }
+
+  .model-overlay {
+    transform: translateY(0);
+  }
+} /* ✅ ESTA LLAVE FALTABA */
+
+
+
+
+/* ==================================================
+   BOARD & STAFF – SECTION BASE
+================================================== */
+
+.board-section {
+  padding: 100px 20px;
+  background: #ffffff;
+}
+
+.board-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.board-title {
+  font-size: 36px;
+  color: #a42018;
+  font-weight: 700;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.board-title::after {
+  content: "";
+  width: 70px;
+  height: 4px;
+  background: #fdbd4a;
+  display: block;
+  margin: 15px auto 0;
+  border-radius: 3px;
+}
+
+/* ==================================================
+   SELECTOR (BOARD / STAFF)
+================================================== */
+
+.board-selector {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-bottom: 80px;
+}
+
+/* Selector Card */
+.selector-card {
+  position: relative;
+  height: 260px;
+  border-radius: 18px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.selector-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Overlay */
+.selector-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(14, 42, 45, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Selector Title */
+.selector-overlay h3 {
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: white;
+  padding: 12px 26px;
+  border: 2px solid rgba(255,255,255,0.75);
+  border-radius: 40px;
+  background: rgba(0,0,0,0.35);
+  backdrop-filter: blur(4px);
+  transition: all 0.3s ease;
+}
+
+/* Hover & Active */
+.selector-card:hover {
+  transform: scale(1.05);
+}
+
+.selector-card:hover .selector-overlay h3 {
+  background: #fdbd4a;
+  color: #000;
+  border-color: #fdbd4a;
+}
+
+.selector-card.active {
+  box-shadow: 0 30px 60px rgba(164,32,24,0.5);
+}
+
+/* ==================================================
+   CONTENT AREA
+================================================== */
+
+.board-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+/* Panels */
+.content-panel {
+  display: none;
+  animation: fadeUp 0.5s ease both;
+}
+
+.content-panel.show {
+  display: block;
+}
+
+/* Panel title */
+.panel-title {
+  font-size: 26px;
+  color: #177E89;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/* ==================================================
+   PEOPLE GRID (BOARD / STAFF)
+================================================== */
+
+.people-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+/* Person card */
+.person-card {
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.person-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 50px rgba(0,0,0,0.18);
+}
+
+/* Person image */
+.person-card img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Person info */
+.person-info {
+  padding: 22px;
+  flex-grow: 1;
+}
+
+.person-info h4 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #a42018;
+  margin-bottom: 6px;
+}
+
+.person-info span {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: #177E89;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.person-info p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #444;
+}
+
+/* ==================================================
+   ANIMATIONS
+================================================== */
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ==================================================
+   RESPONSIVE
+================================================== */
+
+@media (max-width: 1000px) {
+  .people-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .board-selector {
+    grid-template-columns: 1fr;
+  }
+
+  .board-title {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .people-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+/* ================= COMMUNITY PARTNERS ================= */
+
+.partners-section {
+  padding: 100px 20px;
+  background: #f8f8f8;
+}
+
+.partners-container {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.partners-title {
+  font-size: 36px;
+  color: #a42018;
+  margin-bottom: 50px;
+}
+
+.partners-carousel {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.partners-track {
+  display: flex;
+  gap: 60px;
+  width: max-content;
+  animation: scrollPartners 25s linear infinite;
+}
+
+/* Logos */
+.partners-track img {
+  height: 90px;
+  object-fit: contain;
+  opacity: 0.85;
+  filter: grayscale(100%);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.partners-track img:hover {
+  opacity: 1;
+  filter: grayscale(0%);
+  transform: scale(1.05);
+}
+
+/* Animation */
+@keyframes scrollPartners {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.partners-note {
+  margin-top: 25px;
+  font-size: 14px;
+  opacity: 0.75;
+}

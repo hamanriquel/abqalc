@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ABQ Adult Learning Center</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header class="navbar">
+  <div class="logo">
+    ABQ <span>Adult Learning Center</span>
+  </div>
+
+  <button class="menu-toggle" aria-label="Toggle Menu">☰</button>
+
+  <nav class="nav-menu">
+    <ul class="menu-root">
+
+      <li class="menu-item">
+<a href="index.html">Home</a>
+
+        <ul class="submenu">
+          <li class="has-children"><a href="pa.html">Program Information</a>
+             <ul class="submenu sub">
+              <li><a href="pa.html">1</a></li>
+              <li><a href="pa.html">2</a></li>
+              <li><a href="pa.html">3</a></li>
+              <li><a href="pa.html">4</a></li>
+              <li><a href="pa.html">5</a></li>
+             
+            </ul>
+            </li>
+
+          <li class="has-children">
+            <a href="pa.html"> 2022–2023 Student Success</a>
+                  </li>
+       <li><a href="ci.html">Location & Contact</a></li>
+        </ul>
+      </li>
+
+      <li class="menu-item">
+        Who We Are
+
+      </li>
+
+      <li class="menu-item">
+        What We Do
+        <ul class="submenu">
+          <li>Our Programs</li>
+          <li>Student Advocacy</li>
+          <li>Resources</li>
+          <li>Janice Pecos Scholarship</li>
+        </ul>
+      </li>
+
+      <li class="menu-item">
+        How to Help
+        <ul class="submenu">
+          <li>Volunteer</li>
+          <li>Donate</li>
+        </ul>
+      </li>
+
+      <li class="menu-item">
+        What’s Happening
+        <ul class="submenu">
+          <li>Annual Reports</li>
+          <li>Events</li>
+          <li>News</li>
+        </ul>
+      </li>
+
+      <li class="menu-item">FAQ</li>
+    </ul>
+  </nav>
+</header>
+
+
+
+<!-- ================= HERO TITLE ================= -->
+<section class="contact-hero">
+  <h1>Student Success Stories
+</h1>
+</section>
+
+
+
+<section class="stories-section">
+
+  <div class="stories-container">
+
+
+    <!-- FLECHA IZQUIERDA -->
+    <button class="story-arrow left" aria-label="Previous story">
+      &#10094;
+    </button>
+
+
+
+    <!-- IMAGE -->
+    <div class="story-image"> <img id="storyImg" src="img/s1.jpg" alt="Student"></div>
+
+    <!-- TEXT -->
+    <div class="story-text">
+      <h2>Student Success Stories</h2>
+
+      <h3 id="storyName">Shante Bryant- Class of 2023</h3>
+      <p id="storyBio">
+       "I remember walking into class on my first day. Nadia was my teacher at that time. She was so welcoming. I really liked the way she taught. Anyway after a few months we changed teachers. That is when Mr.Enka took over. He was pretty cool he pushed me to really focus. I almost gave up at the end not wanting to take my math test, being that I failed the first time. I remember him telling me to go ahead and take it that hes confident that I would pass. So about a month and half later I went to retest and I did pass. So I guess when you study and really focus and believe in yourself anything is possible. Now I am enrolled at CNM going for my Medical Assistance certificate. So thank you all here at ABQ-ALS. Thanks to Matt because he was always there helping along the way as well!!"
+      </p>
+    </div>
+
+
+       <!-- FLECHA DERECHA -->
+    <button class="story-arrow right" aria-label="Next story">
+      &#10095;
+    </button>
+
+  </div>
+
+</section>
+
+
+<script>
+ 
+const stories = [
+  {
+    img: "img/s1.jpg",
+    name: "Shante Bryant- Class of 2023",
+    bio: "I remember walking into class on my first day. Nadia was my teacher at that time. She was so welcoming. I really liked the way she taught. Anyway after a few months we changed teachers. That is when Mr.Enka took over. He was pretty cool he pushed me to really focus. I almost gave up at the end not wanting to take my math test, being that I failed the first time. I remember him telling me to go ahead and take it that hes confident that I would pass. So about a month and half later I went to retest and I did pass. So I guess when you study and really focus and believe in yourself anything is possible. Now I am enrolled at CNM going for my Medical Assistance certificate. So thank you all here at ABQ-ALS. Thanks to Matt because he was always there helping along the way as well!!"
+  },
+  {
+    img: "img/s2.jpg",
+    name: "Nathanael Dutcher- Class of 2023",
+    bio: "I started ABQALC in January of 2022 I worked and studied hard but with too many road blocks along the since i had to help my family as well as myself through our situation of homelessness. I passed 2 tests in 2022 over a 5 month period and didn't pass anymore test's until may of 2023. all i can say is even if there are many roadblocks in lifeall i can say is, 'don't stop belivin'."
+  },
+  {
+    img: "img/s3.jpg",
+    name: "Samantha Warford- Class of 2023",
+    bio: "Why was it so important to obtain my HiSET? Recently I have become very selfish and have fallen in love with myself, so much that I have started taking care of myself and my future. I have taken care of people my whole life and now I am putting myself first (not easy being a mother). I've been wanting to graduate since the day I dropped out 20 years ago. 2020 scared me. I thought I would be out of a job and out of options cause waiting tables was all that I knew. So I enrolled to ABQ ALC and it was the best experience of my life!!!"
+  },
+  {
+    img: "img/s4.jpg",
+    name: "Isabella Hernandez- Class of 2023",
+    bio: "My experience with this entire experience getting my GED is that I proved to myself, and the others around me, that I am capable of finishing something that I deemed to be hard. I showed that no matter how hard life gets, how busy or overwhelmed you feel, you can do something that can totally change your life, if you put your mind to it. This has been one of the most powerful feeling that I have ever done for myself because I did this. No one else. Just me."
+  },
+  {
+    img: "img/s5.jpg",
+    name: "Rosalind Ballejos- Class of 2023",
+    bio: "When I came into the program I had two jobs. I couldn't imagine adding on another commitment. ABQ ALC was able to work with my schedule. I got my high school equivalency in 6 months. I recommend if your wanting to finish school this is amazing program. Its never to late! They are awesome!"
+  },
+  {
+    img: "img/s6.jpg",
+    name: "Briana Figueroa- Class of 2023",
+    bio: "My experience with this entire experience getting my GED is that I proved to myself, and the others around me, that I am capable of finishing something that I deemed to be hard. I showed that no matter how hard life gets, how busy or overwhelmed you feel, you can do something that can totally change your life, if you put your mind to it. This has been one of the most powerful feeling that I have ever done for myself because I did this. No one else. Just me."
+  },
+  {
+    img: "img/s7.jpg",
+    name: "Alexis Sedillo- Class of 2023",
+    bio: "After 6 long years I have finally did it. Believe in yourself because that is what truly matters. No one can stop you from pursuing your dreams. Let them underestimate you, it makes the win even sweeter."
+  }
+
+
+
+];
+
+let index = 0;
+let interval;
+
+// ELEMENTOS
+const img = document.getElementById("storyImg");
+const name = document.getElementById("storyName");
+const bio = document.getElementById("storyBio");
+
+function showStory(i) {
+  img.style.opacity = 0;
+
+  setTimeout(() => {
+    img.src = stories[i].img;
+    name.textContent = stories[i].name;
+    bio.textContent = stories[i].bio;
+    img.style.opacity = 1;
+  }, 300);
+}
+
+function nextStory() {
+  index = (index + 1) % stories.length;
+  showStory(index);
+}
+
+function start() {
+  interval = setInterval(nextStory, 5000);
+}
+
+function stop() {
+  clearInterval(interval);
+}
+
+// AUTO START
+start();
+
+// PAUSA AL PASAR MOUSE
+document.querySelector(".stories-container").addEventListener("mouseenter", stop);
+document.querySelector(".stories-container").addEventListener("mouseleave", start);
+
+function prevStory() {
+  index = (index - 1 + stories.length) % stories.length;
+  showStory(index);
+}
+
+// EVENTOS FLECHAS
+document.querySelector(".story-arrow.right").addEventListener("click", () => {
+  stop();
+  nextStory();
+});
+
+document.querySelector(".story-arrow.left").addEventListener("click", () => {
+  stop();
+  prevStory();
+});
+
+</script>
+
+
+
+
+
+
+
+
+<footer class="site-footer">
+
+  <div class="footer-container">
+
+    <!-- INFO -->
+    <div class="footer-column">
+      <h3>ABQ Adult Learning Center</h3>
+      <p>
+        1201 San Mateo Blvd SE<br>
+        Albuquerque, NM 87108
+      </p>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="footer-column">
+      <h3>Contact</h3>
+      <p>(505) 907‑9957</p>
+      <p>
+        gloria@abqalc.org
+      </p>
+    </div>
+
+    <!-- SOCIAL -->
+    <div class="footer-column">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a href="#" aria-label="Facebook">🌐</a>
+        <a href="#" aria-label="Instagram">📸</a>
+        <a href="#" aria-label="LinkedIn">💼</a>
+      </div>
+    </div>
+
+   
+
+
+  </div>
+
+  <!-- COPYRIGHT -->
+  <div class="footer-bottom">
+    © <span id="year"></span> ABQ Adult Learning Center · All rights reserved
+  </div>
+
+</footer>
+
+<script src="script.js"></script>
+
+
+
+
+</body>
+</html>
