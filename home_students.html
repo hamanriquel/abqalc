@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ABQ Adult Learning Center</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header class="navbar">
+  <div class="logo">
+    ABQ <span>Adult Learning Center</span>
+  </div>
+
+  <button class="menu-toggle" aria-label="Toggle Menu">☰</button>
+
+  <nav class="nav-menu">
+    <ul class="menu-root">
+
+      <li class="menu-item">
+<a href="index.html">Home</a>
+
+        <ul class="submenu">
+          <li class="has-children"><a href="home_program.html">Program Information</a>
+            </li>
+
+          <li class="has-children">
+            <a href="home_students.html"> 2023–2026 Student Success</a>
+            </li>
+          <li><a href="home_location.html">Location & Contact</a></li>
+        </ul>
+      </li>
+
+      <li class="menu-item">
+        <a href="who.html">  Who We Are</a>
+      </li>
+
+      <li class="menu-item">
+        What We Do
+        <ul class="submenu">
+          <li>Our Programs</li>
+          <li>Student Advocacy</li>
+          <li>Resources</li>
+          <li>Janice Pecos Scholarship</li>
+        </ul>
+      </li>
+
+      <li class="menu-item">
+        How to Help
+        <ul class="submenu">
+          <li>Volunteer</li>
+          <li>Donate</li>
+        </ul>
+      </li>
+
+      <li class="menu-item">
+        What’s Happening
+        <ul class="submenu">
+          <li>Annual Reports</li>
+          <li>Events</li>
+          <li>News</li>
+        </ul>
+      </li>
+
+      <li class="menu-item">FAQ</li>
+    </ul>
+  </nav>
+</header>
+
+
+<!-- ================= HERO TITLE ================= -->
+<section class="contact-hero">
+  <h1>Student Success Stories</h1>
+</section>
+
+<!-- ================= STORIES (2 PROMOTIONS) ================= -->
+<section class="stories-section" id="success-stories">
+  <div class="stories-container" aria-label="Student Success Stories Carousel">
+
+    <!-- YEAR SWITCHER -->
+    <div class="stories-years" role="tablist" aria-label="Choose class year">
+      <button class="stories-year-btn is-active"
+              type="button"
+              role="tab"
+              aria-selected="true"
+              data-year="2023">
+        Class of 2023
+      </button>
+
+      <button class="stories-year-btn"
+              type="button"
+              role="tab"
+              aria-selected="false"
+              data-year="2024">
+        Class of 2024
+      </button>
+    
+<button class="stories-year-btn"
+              type="button"
+              role="tab"
+              aria-selected="false"
+              data-year="2025">
+        Class of 2025
+      </button>
+    
+
+<button class="stories-year-btn"
+              type="button"
+              role="tab"
+              aria-selected="false"
+              data-year="2026">
+        Class of 2026
+      </button>
+
+
+    </div>
+
+    <!-- FLECHA IZQUIERDA -->
+    <button class="story-arrow left" aria-label="Previous story" type="button">
+      &#10094;
+    </button>
+
+    <!-- IMAGE -->
+    <div class="story-image">
+      <img id="storyImg" src="img/s1.jpg" alt="Student">
+      <div class="story-badge" id="storyBadge">Class of 2023</div>
+    </div>
+
+    <!-- TEXT -->
+    <div class="story-text">
+      <h2>Student Success Stories</h2>
+
+      <h3 id="storyName">Shante Bryant - Class of 2023</h3>
+      <p id="storyBio">
+        "I remember walking into class on my first day..."
+      </p>
+
+      <div class="story-meta">
+        <span id="storyCounter">1 / 7</span>
+      </div>
+    </div>
+
+    <!-- FLECHA DERECHA -->
+    <button class="story-arrow right" aria-label="Next story" type="button">
+      &#10095;
+    </button>
+
+  </div>
+</section>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+  const promotions = {
+    2023: [
+      {
+        img: "img/s1.jpg",
+        name: "Shante Bryant - Class of 2023",
+        bio: "I remember my first day of class with Nadia, who was very welcoming and whose teaching I really enjoyed. After a few months, Mr. Enka became my teacher and helped me stay focused. I almost gave up after failing my first math test, but he encouraged me to try again, and I eventually passed. This experience showed me that with effort and self-belief, anything is possible. Now I am enrolled at CNM pursuing a Medical Assistance certificate. Thank you to everyone at ABQ-ALS, especially Matt, for all the support along the way"
+      },
+      {
+        img: "img/s2.jpg",
+        name: "Nathanael Dutcher - Class of 2023",
+        bio: "I started ABQALC in January of 2022 I worked and studied hard but with too many road blocks along the since i had to help my family as well as myself through our situation of homelessness. I passed 2 tests in 2022 over a 5 month period and didn't pass anymore test's until may of 2023. all i can say is even if there are many roadblocks in lifeall i can say is, 'don't stop belivin"
+      },
+      {
+        img: "img/s3.jpg",
+        name: "Samantha Warford - Class of 2023",
+        bio: "Why was it so important to obtain my HiSET? Recently I have become very selfish and have fallen in love with myself, so much that I have started taking care of myself and my future. I have taken care of people my whole life and now I am putting myself first (not easy being a mother). I've been wanting to graduate since the day I dropped out 20 years ago. 2020 scared me. I thought I would be out of a job and out of options cause waiting tables was all that I knew. So I enrolled to ABQ ALC and it was the best experience of my life"
+      },
+      {
+        img: "img/s4.jpg",
+        name: "Isabella Hernandez- Class of 2023",
+        bio: "My experience with this entire experience getting my GED is that I proved to myself, and the others around me, that I am capable of finishing something that I deemed to be hard. I showed that no matter how hard life gets, how busy or overwhelmed you feel, you can do something that can totally change your life, if you put your mind to it. This has been one of the most powerful feeling that I have ever done for myself because I did this. No one else. Just me."
+      },
+      {
+        img: "img/s5.jpg",
+        name: "Rosalind Ballejos- Class of 2023",
+        bio: "When I came into the program I had two jobs. I couldn't imagine adding on another commitment. ABQ ALC was able to work with my schedule. I got my high school equivalency in 6 months. I recommend if your wanting to finish school this is amazing program. Its never to late! They are awesome!"
+      },
+      {
+        img: "img/s6.jpg",
+        name: "Briana Figueroa- Class of 2023",
+        bio: "Before I found Albuquerque Adult Learning Center I thought getting my high school equivalency would be difficult. With the help of Matt and Raul I realized if I put in the time I can achieve whatever I put my mind to. I am no longer afraid of trying things that seem hard."
+      }
+      ,
+      {
+        img: "img/s7.jpg",
+        name: "Alexis Sedillo- Class of 2023",
+        bio: "After 6 long years I have finally did it. Believe in yourself because that is what truly matters. No one can stop you from pursuing your dreams. Let them underestimate you, it makes the win even sweeter."
+      }
+    ],
+
+    2024: [
+      {
+         img: "img/s3.jpg",
+        name: "Samantha Warford - Class of 2024",
+        bio: "Why was it so important to obtain my HiSET? Recently I have become very selfish..."
+      },
+      {
+       img: "img/s1.jpg",
+        name: "Shante Bryant - Class of 2024",
+        bio: "I remember walking into class on my first day. Nadia was my teacher at that time..."
+      },
+       {
+     img: "img/s3.jpg",
+        name: "Samantha Warford - Class of 2024",
+        bio: "Why was it so important to obtain my HiSET? Recently I have become very selfish..."
+      },
+
+       {
+       img: "img/s1.jpg",
+        name: "Shante Bryant - Class of 2024",
+        bio: "I remember walking into class on my first day. Nadia was my teacher at that time..."
+      },
+
+       {
+      img: "img/s3.jpg",
+        name: "Samantha Warford - Class of 2024",
+        bio: "Why was it so important to obtain my HiSET? Recently I have become very selfish..."
+      }
+   
+
+
+     ],
+
+    2025: [
+      {
+         img: "img/s3.jpg",
+        name: "ANDRESS Warford - Class of 2025",
+        bio: "Why was it so important to obtain my HiSET? Recently I have become very selfish..."
+      },
+      {
+       img: "img/s1.jpg",
+        name: "AAAAAAAA Bryant - Class of 2025",
+        bio: "I remember walking into class on my first day. Nadia was my teacher at that time..."
+      },
+      {
+       img: "img/s1.jpg",
+        name: "Shante Bryant - Class of 2024",
+        bio: "I remember walking into class on my first day. Nadia was my teacher at that time..."
+      },
+       {
+     img: "img/s3.jpg",
+        name: "Samantha Warford - Class of 2024",
+        bio: "Why was it so important to obtain my HiSET? Recently I have become very selfish..."
+      },
+
+       {
+       img: "img/s1.jpg",
+        name: "Shante Bryant - Class of 2024",
+        bio: "I remember walking into class on my first day. Nadia was my teacher at that time..."
+      },
+
+       {
+      img: "img/s3.jpg",
+        name: "Samantha Warford - Class of 2024",
+        bio: "Why was it so important to obtain my HiSET? Recently I have become very selfish..."
+      },
+      {
+       img: "img/s1.jpg",
+        name: "Shante Bryant - Class of 2024",
+        bio: "I remember walking into class on my first day. Nadia was my teacher at that time..."
+      },
+       {
+     img: "img/s3.jpg",
+        name: "Samantha Warford - Class of 2024",
+        bio: "Why was it so important to obtain my HiSET? Recently I have become very selfish..."
+      },
+
+       {
+       img: "img/s1.jpg",
+        name: "Shante Bryant - Class of 2024",
+        bio: "I remember walking into class on my first day. Nadia was my teacher at that time..."
+      },
+
+       {
+      img: "img/s3.jpg",
+        name: "Samantha Warford - Class of 2024",
+        bio: "Why was it so important to obtain my HiSET? Recently I have become very selfish..."
+      }
+ ],
+
+ 2026: [
+      {
+         img: "img/s12026.png",
+        name: "MATTHEW MONTOYA - Class of 2026",
+        bio: "I dropped out of high school and didn’t feel like I could finish if I went back. But when I came here, I stayed committed and didn’t let negative thoughts get to me. In the end, I passed all my tests and proved to myself that I could do it."
+      },
+      {
+       img: "img/s22026.png",
+        name: "ROBERT GARCIA - Class of 2026",
+        bio: "Unaware of what life had in store, I knew there was always more ahead for me—this was just the first step. I thank ABQ-ALC for helping me reach this milestone. I will continue to strive and move forward, never back.."
+      },
+       {
+     img: "img/s32026.png",
+        name: "PETE YSASI - Class of 2026",
+        bio: "I dropped out of high school at 18 and went straight into hard labor jobs. By 2025, I felt like I hadn’t really built the future I wanted for myself. That realization pushed me to make a change. I decided to attend ABQ-ALC, earned my HSE, they helped me with an internship. I plan to become a firefighter."
+      },
+
+       {
+       img: "img/s42026.png",
+        name: "ALINA CORDOZA - Class of 2026",
+        bio: "I started in ESL classes, but I always wanted to earn my GED. This was a big challenge for me because my first language is Spanish, and most of my classes were in English. Achieving my GED was a very important goal for me because it would open up opportunities to provide for my family and help me grow as a person. I feel very happy and proud of all the work I put in, and in the end, it was worth it."
+      },
+
+       {
+      img: "img/s552026.png",
+        name: "NATORY TORTARELLI - Class of 2026",
+        bio: "After a long year, I finally made it. With support from great teachers and staff, I pushed through challenges, including a car accident and my daughter’s health issues. I had to take some time off but got back on track with the help of my teacher, Daniel Garcia, whose encouragement meant a lot during the hardest moments.."
+      },
+      {
+       img: "img/s62026.png",
+        name: "DONALD HUMMEL - Class of 2026",
+        bio: "Earning my high school equivalency this year has been one of my most meaningful accomplishments, especially while supporting my daughter through serious health challenges. There were moments when giving up felt easier, but my determination to build a better future for us kept me going. This achievement reflects my resilience and commitment to growth, and represents perseverance, love, and a renewed drive to create opportunities for my family."
+      },
+       {
+     img: "img/s72026.png",
+        name: "KAILYN REISCHE - Class of 2026",
+        bio: "After being kicked out at 16, I left school despite being on track to graduate early. Two years later, while pregnant, I decided to earn my HSE. At the ABQ Adult Learning Center, I finished in five weeks with high scores. Now, I’m preparing to study nursing and pursue a career as a Certified Surgical First Assistant."
+      },
+
+       {
+       img: "img/s82026.png",
+        name: "EVLYN SALAZAR - Class of 2026",
+        bio: "I dropped out of high school and wasn’t sure what to do next until my mom encouraged me to get my HSE. At ABQ-ALC, I learned that success takes time and effort. Thank you to everyone who believed in me and supported me throughout my journey!."
+      },
+
+       {
+      img: "img/s92026.png",
+        name: "KEANU SYLVESTER - Class of 2026",
+        bio: "I refused to settle for the life I had and pushed myself toward the one I want. Every setback sharpened my focus instead of slowing me down. Today, my success stands as a reminder that determination beats doubt every time."
+      }
+,
+
+       {
+      img: "img/sA12026.png",
+        name: "SOFIA DAVIS - Class of 2026",
+        bio: "I refused to settle for the life I had and pushed myself toward the one I want. Every setback sharpened my focus instead of slowing me down. Today, my success stands as a reminder that determination beats doubt every time."
+      },
+
+       {
+      img: "img/sA22026.png",
+        name: "DONNA SCHMIDT - Class of 2026",
+        bio: "I left school at 17 after becoming pregnant and didn’t think a diploma was possible. My experience with the Adult Learning Center was amazing. The staff immediately welcomed and supported me. With their help, I built confidence, improved my skills, and earned my diploma—opening new opportunities for me and my children."
+      }
+
+
+
+,
+
+       {
+      img: "img/sA32026.png",
+        name: "ANTHONY ZENTI - Class of 2026",
+        bio: "Anthony enrolled in ABQ-ALC in September 2025 and successfully completed his HSE in three months. I am working to get to a better place. I am in the process of enrolling in a college in Fort Worth, TX. I am interested in becoming a paralegal."
+      },
+
+       {
+      img: "img/sA42026.png",
+        name: "RYAN STAHULAK - Class of 2026",
+        bio: "Ryan enrolled in the ABQ Adult Learning Center in November. During his four months with us, he attended faithfully and demonstrated strong commitment to his goals. He graduated on February 24, 2026. Ryan will be greatly missed by fellow students and our entire community."
+      }
+
+
+
+
+
+
+ ],
+
+
+
+
+
+
+  };
+
+  let currentYear = 2023;
+  let index = 0;
+  let intervalId = null;
+
+  // ELEMENTOS
+  const container = document.querySelector(".stories-container");
+  const imgEl = document.getElementById("storyImg");
+  const nameEl = document.getElementById("storyName");
+  const bioEl = document.getElementById("storyBio");
+  const badgeEl = document.getElementById("storyBadge");
+  const counterEl = document.getElementById("storyCounter");
+  const btnLeft = document.querySelector(".story-arrow.left");
+  const btnRight = document.querySelector(".story-arrow.right");
+  const yearButtons = document.querySelectorAll(".stories-year-btn");
+
+  function getStories() {
+    return promotions[currentYear];
+  }
+
+  function updateCounter() {
+    const total = getStories().length;
+    counterEl.textContent = `${index + 1} / ${total}`;
+  }
+
+  function showStory(i) {
+    const stories = getStories();
+    if (!stories || !stories.length) return;
+
+    imgEl.style.opacity = 0;
+
+    setTimeout(() => {
+      imgEl.src = stories[i].img;
+      nameEl.textContent = stories[i].name;
+      bioEl.textContent = stories[i].bio;
+      badgeEl.textContent = `Class of ${currentYear}`;
+      imgEl.style.opacity = 1;
+      updateCounter();
+    }, 250);
+  }
+
+  function nextStory() {
+    index = (index + 1) % getStories().length;
+    showStory(index);
+  }
+
+  function prevStory() {
+    index = (index - 1 + getStories().length) % getStories().length;
+    showStory(index);
+  }
+
+  function startAuto() {
+    stopAuto();
+    intervalId = setInterval(nextStory, 5000);
+  }
+
+  function stopAuto() {
+    if (intervalId) clearInterval(intervalId);
+    intervalId = null;
+  }
+
+  function setYear(year) {
+    currentYear = Number(year);
+    index = 0;
+
+    yearButtons.forEach(btn => {
+      const active = Number(btn.dataset.year) === currentYear;
+      btn.classList.toggle("is-active", active);
+      btn.setAttribute("aria-selected", active);
+    });
+
+    showStory(index);
+    startAuto();
+  }
+
+  // EVENTOS
+  btnRight.addEventListener("click", () => {
+    stopAuto();
+    nextStory();
+    startAuto();
+  });
+
+  btnLeft.addEventListener("click", () => {
+    stopAuto();
+    prevStory();
+    startAuto();
+  });
+
+  container.addEventListener("mouseenter", stopAuto);
+  container.addEventListener("mouseleave", startAuto);
+
+  yearButtons.forEach(btn => {
+    btn.addEventListener("click", () => {
+      setYear(btn.dataset.year);
+    });
+  });
+
+  // INIT
+  setYear(2023);
+
+});
+</script>
+
+
+
+
+
+
+<footer class="site-footer">
+
+  <div class="footer-container">
+
+    <!-- INFO -->
+    <div class="footer-column">
+      <h3>ABQ Adult Learning Center</h3>
+      <p>
+        1201 San Mateo Blvd SE<br>
+        Albuquerque, NM 87108
+      </p>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="footer-column">
+      <h3>Contact</h3>
+      <p>(505) 907‑9957</p>
+      <p>
+        gloria@abqalc.org
+      </p>
+    </div>
+
+    <!-- SOCIAL -->
+    <div class="footer-column">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a href="#" aria-label="Facebook">🌐</a>
+        <a href="#" aria-label="Instagram">📸</a>
+        <a href="#" aria-label="LinkedIn">💼</a>
+      </div>
+    </div>
+
+   
+
+
+  </div>
+
+  <!-- COPYRIGHT -->
+  <div class="footer-bottom">
+    © <span id="year"></span> ABQ Adult Learning Center · All rights reserved
+  </div>
+
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

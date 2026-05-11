@@ -1703,3 +1703,320 @@ nav a {
   font-size: 14px;
   opacity: 0.75;
 }
+
+
+
+/* ==============================
+   STORIES - YEAR SWITCHER + BADGE
+   ============================== */
+
+.stories-container{
+  position: relative;
+}
+
+/* Selector de años */
+.stories-years{
+  width: 100%;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 18px;
+  flex-wrap: wrap;
+}
+
+.stories-year-btn{
+  border: 1px solid rgba(0,0,0,.12);
+  background: #fff;
+  color: #1f2937;
+  font-weight: 800;
+  padding: 10px 16px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: transform .18s ease, background .18s ease, border-color .18s ease, box-shadow .18s ease;
+  box-shadow: 0 10px 20px rgba(0,0,0,.06);
+}
+
+.stories-year-btn:hover{
+  transform: translateY(-1px);
+  border-color: rgba(23,127,131,.35);
+}
+
+.stories-year-btn.is-active{
+  background: linear-gradient(135deg, #177f83, #106468);
+  color: #fff;
+  border-color: transparent;
+  box-shadow: 0 16px 28px rgba(16,100,104,.25);
+}
+
+/* Badge sobre la imagen */
+.story-image{
+  position: relative;
+}
+
+.story-badge{
+  position: absolute;
+  left: 14px;
+  bottom: 14px;
+  background: rgba(0,0,0,.55);
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-weight: 800;
+  font-size: .85rem;
+  backdrop-filter: blur(6px);
+}
+
+/* Contador */
+.story-meta{
+  margin-top: 14px;
+  color: rgba(0,0,0,.6);
+  font-weight: 700;
+  font-size: .95rem;
+}
+
+/* Suaviza transiciones cuando cambia historia */
+#storyImg{
+  transition: opacity .25s ease;
+}
+
+
+/* ===========================
+   INSTRUCTORS SECTION
+   =========================== */
+
+.instructors-section{
+  --red:#a42018;
+  --yellow:#fdbd4a;
+  --teal:#177E89;
+
+  padding: clamp(70px, 8vw, 110px) 0;
+  background: linear-gradient(180deg, #ffffff 60%, rgba(23,126,137,.05));
+}
+
+.instructors-wrapper{
+  width: min(1200px, 92%);
+  margin: auto;
+}
+
+.instructors-header{
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 64px;
+}
+
+.instructors-tag{
+  display: inline-block;
+  background: rgba(253,189,74,.25);
+  color: #000;
+  font-weight: 800;
+  padding: 6px 14px;
+  border-radius: 999px;
+  letter-spacing: .08em;
+  margin-bottom: 14px;
+}
+
+.instructors-header h2{
+  font-size: clamp(2.2rem, 4vw, 3.2rem);
+  color: var(--red);
+  font-weight: 900;
+  margin-bottom: 12px;
+}
+
+.instructors-header p{
+  color: #444;
+  font-size: 1.05rem;
+}
+
+/* GRID */
+.instructors-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
+  gap: 36px;
+}
+
+/* CARD */
+.instructor-card{
+  position: relative;
+  background: #fff;
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0 18px 40px rgba(0,0,0,.12);
+  cursor: pointer;
+  transition: transform .5s ease, box-shadow .5s ease;
+}
+
+.instructor-card::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background: radial-gradient(circle at top,
+    rgba(253,189,74,.4),
+    transparent 65%);
+  opacity: 0;
+  transition: opacity .4s ease;
+}
+
+.instructor-card:hover{
+  transform: translateY(-10px);
+  box-shadow: 0 30px 60px rgba(0,0,0,.25);
+}
+
+.instructor-card:hover::before{
+  opacity: 1;
+}
+
+/* IMAGE */
+.instructor-photo{
+  height: 260px;
+  overflow: hidden;
+}
+
+.instructor-photo img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .6s ease;
+}
+
+.instructor-card:hover img{
+  transform: scale(1.08);
+}
+
+/* INFO */
+.instructor-info{
+  padding: 22px;
+  text-align: center;
+}
+
+.instructor-info h3{
+  font-size: 1.25rem;
+  font-weight: 900;
+  color: #111;
+  margin-bottom: 8px;
+}
+
+.instructor-info span{
+  color: var(--teal);
+  font-weight: 800;
+  font-size: .95rem;
+}
+
+/* RESPONSIVE */
+@media(max-width: 600px){
+  .instructor-photo{ height: 220px; }
+}
+
+
+
+/* ===============================
+   Janice Pecos Scholarship – Simple Style
+   =============================== */
+
+.scholarship-spotlight {
+  padding: 60px 0;
+  background: #fff;
+}
+
+.scholarship-spotlight__wrap {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Header */
+.scholarship-spotlight__header {
+  margin-bottom: 32px;
+}
+
+.scholarship-spotlight__kicker {
+  color: #a42018;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+}
+
+.scholarship-spotlight__title {
+  font-size: 2rem;
+  margin: 0 0 8px;
+}
+
+.scholarship-spotlight__subtitle {
+  color: #555;
+  font-size: 1rem;
+}
+
+/* Layout */
+.scholarship-spotlight__grid {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+/* Content */
+.scholarship-spotlight__content {
+  flex: 1;
+}
+
+.scholarship-spotlight__link {
+  display: inline-block;
+  margin-bottom: 16px;
+  color: #177E89;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.scholarship-spotlight__link:hover {
+  text-decoration: underline;
+}
+
+.scholarship-spotlight__text {
+  margin-bottom: 20px;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Buttons */
+.scholarship-spotlight__actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.scholarship-spotlight__btn {
+  padding: 10px 16px;
+  font-size: 0.95rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.scholarship-spotlight__btn--primary {
+  background: #a42018;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+}
+
+.scholarship-spotlight__btn--ghost {
+  background: transparent;
+  border: 1px solid #ccc;
+}
+
+/* Image */
+.scholarship-spotlight__media {
+  flex: 1;
+}
+
+.scholarship-spotlight__img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .scholarship-spotlight__grid {
+    flex-direction: column;
+  }
+}
